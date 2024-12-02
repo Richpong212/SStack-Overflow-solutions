@@ -19,7 +19,7 @@ const isObjEqual = (obj1, obj2) =>
 // Step 3: Filter out the unique objects
 const unique_objworkflow = [];
 const unique_workflow = merged_workflow.filter(
-  (workflow, index) =>
+  (workflow) =>
     !unique_objworkflow.some((obj) => isObjEqual(obj, workflow)) &&
     unique_objworkflow.push(workflow)
 );
